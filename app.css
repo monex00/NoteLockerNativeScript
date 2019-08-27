@@ -1,0 +1,13 @@
+﻿
+@import '~nativescript-theme-core/css/core.dark.css';
+
+
+.btn {
+    font-size: 18;
+}
+
+Label{
+    color: whitesmoke;
+    font-size: 20;
+    border: 10;
+}

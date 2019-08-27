@@ -1,0 +1,13 @@
+<Page navigatingTo="onNavigatingTo" class="page">
+    <Page.actionBar>
+        <ActionBar title="{{ title }}" icon="" class="action-bar">
+        </ActionBar>
+    </Page.actionBar>
+<StackLayout>
+    
+    <Label text="{{ text }}" textWrap="true" />
+    <Button text="prova" tap="" />
+</StackLayout>
+
+    
+</Page>

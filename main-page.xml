@@ -1,0 +1,31 @@
+
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" xmlns:lv="nativescript-ui-listview" navigatingTo="onNavigatingTo" class="page">
+ 
+    <Page.actionBar>
+        <ActionBar title="Note Locker" icon="" class="action-bar">
+        </ActionBar>
+    </Page.actionBar>
+
+    <StackLayout class="p-20">
+
+        <lv:RadListView items="{{ items }}" itemSelected="{{ onSelected }}"  selectionBehavior="Press" multipleSelection="false">
+
+            <lv:RadListView.listViewLayout>
+                <lv:ListViewLinearLayout  scrollDirection="Vertical" />
+            </lv:RadListView.listViewLayout>
+
+            <lv:RadListView.itemTemplate>
+                <StackLayout height="50" orientation="vertical">
+                    <Label id= "{{ id }}" text="{{ title }}"/>
+                </StackLayout>
+            </lv:RadListView.itemTemplate>
+
+        </lv:RadListView>
+
+
+        <Button text="aggiungi" tap="{{ onAdd }}" class="btn btn-primary"/>
+        <Button text="leggi" tap="{{ onRead }}" class="btn btn-primary"/>
+        <Button text="pulisci" tap="{{ clear }}" />
+        
+    </StackLayout>
+</Page>
