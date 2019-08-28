@@ -8,15 +8,16 @@
 
     <StackLayout class="p-20">
 
-        <lv:RadListView items="{{ items }}" itemSelected="{{ onSelected }}"  selectionBehavior="Press" multipleSelection="false">
+        <lv:RadListView height="65%" items="{{ items }}" itemSelected="{{ onSelected }}" itemLoading="{{ onItemLoading }}" selectionBehavior="Press" multipleSelection="false">
 
             <lv:RadListView.listViewLayout>
-                <lv:ListViewLinearLayout  scrollDirection="Vertical" />
+                <lv:ListViewLinearLayout itemInsertAnimation="Scale" itemDeleteAnimation="Scale" scrollDirection="Vertical" />
             </lv:RadListView.listViewLayout>
 
             <lv:RadListView.itemTemplate>
                 <StackLayout height="50" orientation="vertical">
-                    <Label id= "{{ id }}" text="{{ title }}"/>
+                    <Label class="lbl" id= "{{ id }}" text="{{ title }}"/>
+                    <StackLayout class="separator" height="2"/>
                 </StackLayout>
             </lv:RadListView.itemTemplate>
 
@@ -24,7 +25,6 @@
 
 
         <Button text="aggiungi" tap="{{ onAdd }}" class="btn btn-primary"/>
-        <Button text="leggi" tap="{{ onRead }}" class="btn btn-primary"/>
         <Button text="pulisci" tap="{{ clear }}" />
         
     </StackLayout>

@@ -4,10 +4,22 @@
 
 .btn {
     font-size: 18;
+    background-color: rgb(185, 0, 0);
 }
 
 Label{
-    color: whitesmoke;
-    font-size: 20;
+    color: rgb(255, 250, 250);
+    font-size: 25;
+    border-bottom: 20;
+    border-radius: 5;
+}
+
+
+.txt{
+    color: white;
     border: 10;
+}
+
+.separator{
+    background-color: rgb(155, 6, 6);
 }

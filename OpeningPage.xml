@@ -5,9 +5,9 @@
     </Page.actionBar>
 <StackLayout>
     
-    <Label text="{{ text }}" textWrap="true" />
-    <Button text="prova" tap="" />
+    <TextView class="txt" height="80%" hint="insert your note" text="{{ text }}" editable="true" />
+    <Button text="save" tap="{{ onSave }}" class="btn btn-primary" />
+    
 </StackLayout>
 
-    
 </Page>
